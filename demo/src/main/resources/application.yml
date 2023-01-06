@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: Deom
+    version: v1.0.0
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: local
+
+server:
+  port: 8600
+
+logging:
+  level:
+    root: debug
+
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+server:
+  port: 8600
+
+logging:
+  level:
+    root: debug
