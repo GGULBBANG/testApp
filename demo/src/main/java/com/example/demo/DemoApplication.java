@@ -8,9 +8,6 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
-		//테스트
-		//테스트2
-		//테스트333344444111111
 	}
 
 }
