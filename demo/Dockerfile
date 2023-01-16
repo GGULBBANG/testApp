@@ -1,6 +1,5 @@
-FROM openjdk:8-jdk-alpine
-VOLUME /tmp
-ARG JAR_FILE=build/libs/retrospect-0.0.1-SNAPSHOT.jar
+FROM java:8
+EXPOSE 8081
+ARG JAR_FILE=build/libs/*.jar
 COPY ${JAR_FILE} app.jar
-EXPOSE 8600
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java", "-jar", "/app.jar"]
